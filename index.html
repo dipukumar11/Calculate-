@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+  <header>
+    <h1 class="text-5xl font-bold text-center text-red-700">CalCulet.</h1>
+  </header>
+
+  <main class="m-20 mx-auto mt-6">
+
+    <section>
+       <div class="lg:flex md:flex-1 ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-5 w-9/12 ml-5 mb-5 m-auto">
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="font-bold text-3xl text-center">Triangle</h2>
+                  <p class="text-center">Area (A) = <span id="formula">0.5</span> X b X h</p>
+                <div class="flex gap-5 p-3">
+                    <input class="w-16 border" type="text" name="" id="width-base">
+                    <p>CM</p>
+                    <!-- height calculat start hear -->
+                    <input class="w-16 border" type="text" name="" id="height-value">
+                    <p>CM</p>
+                </div>
+                <b  class="text-xl bg-yellow-500 border p-3 rounded-xl text-white">Area: <span id="calculat-result" > 0</span > CM <sup>2</sup>  </b>
+
+                  <div class="card-actions ">
+                    <button onclick="calculatTriangleArea()" class=" btn  w-full font-bold h-30  text-white bg-[#1090D8]">Calculate</button>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card  bg-base-100 shadow-xl">
+                <figure class="p-2"><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+             
+
+
+        </div>
+
+
+        <!-- area start -->
+
+
+                    <div class="mx-auto">
+                        <h1 class="text-center font-bold text-3xl">Area Calculate</h1>
+                       <hr />
+                    </div>
+       </div>
+    </section>
+
+  </main>
+
+  <script src="js File/calculat.js"></script>
+    
+</body>
+</html>
